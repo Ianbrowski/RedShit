@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: url('RED.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+      width: 100%;
+    height: 100vh; /* 100vh makes the div take the full height of the viewport */
+}
+header {
+  
+background-color: rgba(255,255,255,0.06);
+box-shadow: 20px 20px 25px rgba(0,0,0,0.2);
+backdrop-filter: blur(15px);
+
+padding: 20px;
+border-bottom: 0.5px solid white;
+}
+header h1{
+    text-align: center;
+  font-weight: 900;
+  text-align: center;
+  background-image: url('REDD.gif');
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size:contain; ;
+  font-size: 65px;
+  font-stretch: ultra-condensed;
+  text-shadow: 1px 1px 1px black;
+}
+form {
+  width: min(90%, 25em);
+  
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: 50%;
+  padding: 5em 2em;
+  border-radius: 0.5em;
+  background-color: rgba(255,255,255,0.06);
+  border-radius: 10px;
+  box-shadow: 20px 20px 25px rgba(0,0,0,0.2);
+  backdrop-filter: blur(15px);
+  border:0.5px solid white;
+}
+.error-message {
+  color: #ff3434;
+  visibility: hidden;
+}
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  border: none;
+  border-radius: 0.3em;
+}
+button {
+  background-color: black;
+  margin-top: 1em;
+  cursor: pointer;
+  color:red;
+}
+button:hover{
+  pointer: cursor;
+  
+  background-image: url('REDD.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+}
+.shake {
+  animation: shake 0.5s ease;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 768px) {
+ header h1{
+  text-align: center;
+  font-weight: 900;
+  text-align: center;
+  background-image: url('REDD.gif');
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size:contain; ;
+  font-size: 50px;
+  font-stretch: ultra-condensed;
+  text-shadow: 1px 1px 1px black;
+}
+}
